@@ -1,0 +1,20 @@
+#include <iostream>
+#include <Windows.h>
+using namespace std;
+
+int num = 0;
+
+int main() {
+
+		while (num < 37) {
+			cout << num << " ";
+			num = num + 3; //num +=3
+		}
+
+		string doexit = "music";
+		while (doexit != "q") {
+			Beep(rand() % 1000, rand() % 1000);
+			cin >> doexit;
+			cout << "press 'q' to exit" << endl;
+		}
+}
