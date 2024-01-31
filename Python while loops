@@ -1,0 +1,15 @@
+import random
+from winsound import Beep
+
+num = 0
+
+while num <37:
+    print(num, end = " ")
+    num +=3
+    
+print()
+
+word = "music"
+while word != "q":
+    Beep(random.randrange(200,800),random.randrange(200,800))
+    word = input("enter q to quit")
